@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    header {
+      background-color: rgba(168, 133, 188, 0.4);
+      color: #28290D;
+      padding: 20px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      margin: 20px auto;
+      font-family: Georgia, serif;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .gallery-item {
+      width: calc(25% - 20px);
+      margin: 10px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 250px ;
+      obejct fit: cover;
+      display: block;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+    .button-container {
+      margin: 20px;
+    }
+
+    button {
+      padding: 10px 22px;
+      background-color: #846595;
+      border-radius: 6px;
+      color: #fff;
+      border: none;
+      font-size: 13px;
+      font-weight: 400;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      margin: 0 10px;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+    }
+
+  </style>
+</head>
+<body>
+</head>
+<body>
+<header>
+  <h1>NUR FAZREEN AQILAH BINTI MUHAMAD FADZIL</h1>
+  <p>Web Designer</p>
+</header>
+  <div class="gallery-container">
+    <div class="gallery-item">
+      <img src="gallery1.jpg" alt="Image 1">
+	  <p>Modul Asas Kemahiran Digital. </p>
+    </div>
+    <div class="gallery-item">
+      <img src="gallery2.jpg" alt="Image 2">
+	  <p>Maths Tiktok STEM National Level . </p>
+    </div>
+    <div class="gallery-item">
+      <img src="gallery3.jpg" alt="Image 3">
+	  <p>Kursus Pengurusan Organisasil. </p>
+    </div>
+    <div class="gallery-item">
+      <img src="gallery4.jpg" alt="Image 4">
+	  <p> Academic Certificate. </p>
+    </div>
+    <div class="gallery-item">
+      <img src="gallery5.jpg" alt="Image 5">
+	  <p> Graduate as Top 12 prefect. </p>
+	 </div>
+	<div class="gallery-item">
+      <img src="gallery6.jpg" alt="Image 6">
+	  <p> Malaysia Future Leaders School Camp. </p>
+	 </div>
+	<div class="gallery-item">
+      <img src="gallery7.jpg" alt="Image 7">
+	  <p> KPPIM Handball. </p>
+	  </div>
+	 <div class="gallery-item">
+      <img src="gallery8.jpg" alt="Image 8">
+	  <p> Just mom and my sister. </p>
+    </div>
+  </div>
+
+  <div class="button-container">
+	<button onclick="window.location.href='index.html'">Home</button>
+    <button onclick="window.location.href='resumepage2.html'">Profile</button>
+    <button onclick="window.location.href='resume.html'">Experience</button>
+	<button onclick="window.location.href='resumepage3.html'">Contact</button>
+	<button onclick="window.location.href='comment.html'">Leave a comment</button>
+	<button onclick="window.location.href='game.html'">Game</button>
+  </div>
+</body>
+</html>

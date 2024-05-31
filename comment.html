@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comments</title>
+<style>
+  body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+
+  header {
+    background-color: rgba(168, 133, 188, 0.4);
+    color: #28290D;
+    padding: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 20px auto;
+    font-family: Georgia, serif;
+  }
+
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .gallery-item {
+    width: calc(25% - 20px);
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+
+  .button-container {
+    margin: 20px;
+  }
+
+  button {
+    padding: 10px 22px;
+    background-color: #846595;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+  }
+
+  button:hover {
+    transform: translateY(-2px);
+  }
+
+  .answer {
+    display: none;
+    font-weight: bold;
+    color: blue;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>NUR FAZREEN AQILAH BINTI MUHAMAD FADZIL</h1>
+  <p>Web Designer</p>
+  <h2>Riddles For Fun</h2>
+</header>
+<h2> Put the answer in the comment section.</h2>
+<p>1. What has to be broken before you can use it ?</p>
+<p>2. What month of the year has 28 days?</p>
+<p>3. What question can you never answer yes to?</p>
+
+<form id="commentForm">
+  <label for="name">Your Name:</label><br>
+  <input type="text" id="name" name="name" required><br>
+  <label for="comment">Your Comment:</label><br>
+  <textarea id="comment" name="comment" rows="7" required></textarea><br>
+  <button type="button" onclick="showAnswer()">Submit</button>
+</form>
+
+<div class="answer" id="answer1">1. An egg.</div>
+<div class="answer" id="answer2">2. All months have 28 days.</div>
+<div class="answer" id="answer3">3. Are you asleep yet?</div>
+
+<div class="button-container">
+  <button onclick="window.location.href='index.html'">Home</button>
+  <button onclick="window.location.href='resumepage2.html'">Profile</button>
+  <button onclick="window.location.href='resume.html'">Experience</button>
+  <button onclick="window.location.href='resumepage3.html'">Contact</button>
+  <button onclick="window.location.href='gallery.html'">Gallery</button>
+<button onclick="window.location.href='game.html'">Game</button>
+</div>
+
+<script>
+  function showAnswer() {
+    document.getElementById('answer1').style.display = 'block';
+    document.getElementById('answer2').style.display = 'block';
+    document.getElementById('answer3').style.display = 'block';
+  }
+</script>
+
+</body>
+</html>

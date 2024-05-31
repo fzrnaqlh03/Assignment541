@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+
+  <style>
+    body {
+      font-family: Georgia, sans-serif;
+      font-size: 15px;
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: rgba(168, 133, 188, 0.4); 
+      color: #28290D;
+      padding: 20px;
+      text-align: center; /* Adjusted text alignment */
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      border-radius:10px;
+      position: relative; /* Added position relative */
+      margin: 10px auto;
+	  font-family: Georgia, serif;
+    }
+    .header-img {
+      width: 210px;
+      height: 220px;
+      margin-right: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    button {
+      padding: 10px 22px;
+      background-color: #846595;
+      border-radius: 6px;
+      color: #fff;
+      border: none;
+      font-size: 13px;
+      font-weight: 400;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      margin: 0 10px;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      text-align: center;
+	  font-family: Georgia, sans-serif;
+    }
+     
+
+    .section {
+      margin: 20px;
+      padding: 10px;
+      background-color: #E0CAEC;
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h2 {
+      margin-top: 0;
+    }
+
+    .section p {
+      margin-top: 5px;
+    }
+
+    table {
+      width: 90%; /* Set table width to 100% */
+      margin: 20px auto;
+    }
+
+    th, td {
+      padding: 13px;
+      text-align: center;
+      font-size: 13px;
+      font-family: Georgia, serif; 
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th {
+      background-color: #f2f2f2;
+      color: #28290D;
+      font-weight: bold;
+    }
+
+    tr {
+      background-color: #FFFFFF; 
+    }
+
+    tr:nth-child(even) {
+      background-color: #E0CAEC;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px auto;
+    }
+    .center-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NUR FAZREEN AQILAH BINTI MUHAMAD FADZIL</h1>
+    <p>Web Designer</p>
+  </header>
+  <div class="main-container">
+    <img class="header-img center-image" src="fazreen.jpg" alt="Profile Picture">
+    <div class="container">
+      <section class="section">
+        <h2>Biodata</h2>
+        <p>Born: Hospital Ampang Puteri, Selangor</p>
+        <p>Marital status: Single</p>
+        <p>Siblings: 2</p>
+        <p>Religion: Islam</p>
+        <p>Nationality: Malaysian</p>
+        <p>Gender: Female</p>
+        <p>Weight: 58kg</p>
+        <p>Height: 154cm</p>
+      </section>
+      <h1>Positions held</h1>
+      <table>
+        <tr>
+          <th>Positions</th>
+          <th>Level</th>
+          <th>Year</th>
+        </tr>
+        <tr>
+          <td>School Prefects</td>
+          <td>SMK Convent Bukit Nanas</td>
+          <td>2016-2022</td>
+        </tr>
+        <tr>
+          <td>Treasurer</td>
+          <td>Handball Club</td>
+          <td>20117</td>
+        </tr>
+        <tr>
+          <td>Treasurer</td>
+          <td>Sport house Xavier</td>
+          <td>2017</td>
+        </tr>
+        <tr>
+          <td>Vice Secretary</td>
+          <td>Handball Club</td>
+          <td>2019</td>
+        </tr>
+        <tr>
+          <td>Top 12 School Prefect </td>
+          <td>SMK Convent Bukit Nanas</td>
+          <td>2020</td>
+        </tr>
+        <tr>
+          <td>Vice Secretary Prefect</td>
+          <td>SMK Convent Bukit Nanas</td>
+          <td>2020</td>
+        </tr>
+        <tr>
+          <td>Vice President</td>
+          <td>Multimedia Computing Society UiTM</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <td>Block B1 Level Asisstant </td>
+          <td>Kolej Mawar</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <td>Exco Multimedia</td>
+          <td>Kolej Mawar</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <td>President</td>
+          <td>Sultimedia Computing Society UiTM</td>
+          <td>2024</td>
+        </tr>
+      </table>
+      <div class="button-container">
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='resume.html'">Experience</button>
+        <button onclick="window.location.href='resumepage3.html'">Contact</button>
+        <button onclick="window.location.href='gallery.html'">Gallery</button>
+        <button onclick="window.location.href='comment.html'">Leave a comment </button>
+       <button onclick="window.location.href='game.html'">Game</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
